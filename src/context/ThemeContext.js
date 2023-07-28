@@ -8,6 +8,8 @@ const themeReducer = (state, action) => {
       return { ...state, color: action.payload }
 	case 'CHANGE_MODE':
 		return {...state, mode: action.payload }
+		default: 
+			return;
   }
 }
 
