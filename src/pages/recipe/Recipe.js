@@ -10,9 +10,9 @@ export default function Recipe() {
   const { id } = useParams()
   const { mode } = useTheme()
 
+  const [recipe, setRecipe] = useState(null)
   const [isPending, setIsPending] = useState(false)
   const [error, setError] = useState(false)
-  const [recipe, setRecipe] = useState(null)
 
   useEffect(() => {
     setIsPending(true)
