@@ -2,14 +2,12 @@ import { useParams } from 'react-router-dom'
 import { useTheme } from '../../hooks/useTheme'
 import { useState, useEffect } from 'react'
 import { projectFirestore } from '../../firebase/config'
-
 // styles
 import './Recipe.css'
 
 export default function Recipe() {
   const { id } = useParams()
   const { mode } = useTheme()
-
   const [recipe, setRecipe] = useState(null)
   const [isPending, setIsPending] = useState(false)
   const [error, setError] = useState(false)

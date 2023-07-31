@@ -5,6 +5,7 @@ import RecipeList from '../../components/RecipeList'
 // styles
 import './Search.css'
 
+//local settings for search bar
 export default function Search() {
   const queryString = useLocation().search
   const queryParams = new URLSearchParams(queryString)
