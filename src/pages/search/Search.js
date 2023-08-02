@@ -6,8 +6,7 @@ import React, { useEffect, useState } from "react";
 // styles
 import "./Search.css";
 
-
-
+//local settings for search bar
 export default function Search() {
   const [data, setData] = useState(null);
   const [isPending, setIsPending] = useState(false);
@@ -44,6 +43,10 @@ export default function Search() {
   const queryString = useLocation().search;
   const queryParams = new URLSearchParams(queryString);
   const query = queryParams.get("q");
+
+  console.log(query);
+  console.log(data);
+
 
 
   return (
