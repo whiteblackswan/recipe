@@ -11,7 +11,6 @@ export default function Searchbar() {
     e.preventDefault();
 
     navigate(`/search?q=${term}`);
-    
   };
 
   return (
