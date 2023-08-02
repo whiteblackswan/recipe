@@ -38,6 +38,7 @@ export default function Search() {
     );
 
     return () => unsub();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const queryString = useLocation().search;
